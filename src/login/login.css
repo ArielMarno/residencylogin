@@ -1,0 +1,238 @@
+/* Estilos generales del componente */
+.login{
+    font-family: var(--font-family);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+
+/* Lado izquierdo del componente */
+.left-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("C:\Users\ariel\OneDrive\Escritorio\residencylogin\residencylogin\src\assets\medical-residency.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Filtro azul sobre imagen de fondo */
+.capa{
+    background-color: rgba(49,151,227, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Texto e imagen del lado izquierdo */
+.left-top_body{
+    margin: 0 0 5rem 5rem;
+    position: absolute;
+    color: #fff;
+}
+
+.left-top_body img{
+    margin-bottom: 1.5rem;
+}
+
+.left-top_body h1{
+    letter-spacing: 0.5px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+.left-top_body p{
+    line-height: 27px;
+    font-size: 1.2rem;
+    max-width: 640px;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    padding-right: 1rem;
+}
+
+
+
+/* Lado derecho del componente */
+
+.right-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 8.5rem;
+    margin-bottom: 5rem;
+}
+
+.title h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.right-bottom_body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+label{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+input{
+    border: 2px solid #bfc9cf;
+    border-radius: 25px;
+    width: 280px;
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+input:focus {
+    border: 2px solid #358dcb;
+    outline: none;
+}
+
+button{
+    background-color: #358dcb;
+    border: none;
+    border-radius: 25px;
+    width: 280px;
+    height: 40px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    filter: brightness(95%);
+}
+
+
+/* Enlace para registrarse */
+.p-bottom{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.p-bottom a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #358dcb;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 1350px){
+
+    .left-top{
+        align-items: center;
+    }
+    .left-top_body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    
+    .left-top_body h1{
+        font-size: 1.7rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .left-top_body p{
+        font-size: 1.1rem;
+        max-width: 500px;
+        margin-bottom: 10rem;
+    }
+
+    .right-bottom{
+        padding: 0 1rem;
+    }
+
+    .title h2{
+        font-size: 2rem;
+    }
+
+    .title p{
+        font-size: 0.9rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .login{
+        grid-template-columns: 1fr;
+    }
+
+    .left-top{
+        height: 60vh;
+        margin-bottom: 2rem;
+        border-bottom-right-radius: 25%;
+    }
+
+    .capa{
+        border-bottom-right-radius: 25%;
+    }
+    .left-top_body img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+    
+    .left-top_body h1{
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    .left-top_body p{
+        line-height: 16px;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        padding-right: 1rem;
+        max-width: 300px;
+    }
+    
+
+    .title{
+        margin-bottom: 1.5rem;
+        margin-right: 10rem;
+    }
+    
+    .title h2{
+        font-size: 1.5rem;
+    }
+
+    .title p{
+        font-size: 0.8rem;
+    }
+    
+    .p-bottom{
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .p-bottom a{
+        font-size: 0.8rem;
+    }
+    
+}
